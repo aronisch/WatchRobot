@@ -1,0 +1,11 @@
+Installation de node.js :
+
+Placer l'archive de ce dossier  -> node-v0.10.38.tar.gz
+Décompresser l'archive 		-> tar -zxf node-v0.10.38.tar.gz
+Rentrer dans le dossier créé	-> cd node-v0.10.38
+Configurer la compilation 	-> ./configure
+Compiler			-> make -j n (avec n=1 pour une RPi B / B+ ou n=4 avec une RPi 2 B)
+
+Attendre (longtemps) : 3 à 4h pour une RPi B / B+ ou 30 min pour une RPi 2B
+
+Installer node.js		-> sudo make install

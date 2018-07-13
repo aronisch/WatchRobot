@@ -1,0 +1,19 @@
+Créer un dossier contenant les fichiers serveurs, y aller dans l'invite de commande et installer les dépendances suivantes :
+Syntaxe : npm install nomDuModule --> Peut nécéssiter des droits administrateurs ( sudo )
+-> express
+-> socket.io
+-> pi-gpio
+-> i2c@0.1.8
+-> kissfft
+-> node-core-audio --> instructions particulières :
+
+Installer d'abord PortAudio :
+Décompresser le fichier tar.gz -> tar -zxf pa_stable_*version*.tar.gz
+Rentrer dans le dossier créé   -> cd pa_stable_*version*
+Configurer la compilation      -> ./configure
+Lancer la compilation	       -> make
+Installer		       -> sudo make install
+
+Ensuite installer node-core-audio à l'aide de l'archive corrigé :
+Placer l'archive dans le dossier serveur
+Puis -> npm install node-core-audio.tar.gz
